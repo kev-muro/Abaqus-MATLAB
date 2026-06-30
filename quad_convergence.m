@@ -2,7 +2,7 @@ clc
 clear
 close all
 
-load("quad_convergence_v2.mat")
+load("quad_convergence_v3.mat")
 
 max_slope_deg = rad2deg(max_slope);
 max_slope_bounds = [0.99 1.01]*max_slope_deg(end);
