@@ -2,13 +2,15 @@ clc
 clear
 close all
 
-load("quad_convergence_v4_pt1.mat")
-load("quad_convergence_v4_pt2.mat")
+% load("quad_convergence_v4_pt1.mat")
+% load("quad_convergence_v4_pt2.mat")
+% 
+% element_count = [element_count_pt1;  element_count_pt2];
+% mesh_size = [mesh_size_pt1; mesh_size_pt2];
+% rms_slope = [rms_slope_pt1; rms_slope_pt2];
+% max_slope = [max_slope_pt1; max_slope_pt2];
 
-element_count = [element_count_pt1;  element_count_pt2];
-mesh_size = [mesh_size_pt1; mesh_size_pt2];
-rms_slope = [rms_slope_pt1; rms_slope_pt2];
-max_slope = [max_slope_pt1; max_slope_pt2];
+load("quad_convergence_v5.mat")
 
 max_slope_deg = rad2deg(max_slope);
 max_slope_bounds = [0.99 1.01]*max_slope_deg(end);
