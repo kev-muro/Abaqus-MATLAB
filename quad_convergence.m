@@ -10,7 +10,7 @@ close all
 % rms_slope = [rms_slope_pt1; rms_slope_pt2];
 % max_slope = [max_slope_pt1; max_slope_pt2];
 
-load("quad_convergence_v5.mat")
+load("quad_mesh_D_low_t_high.mat")
 
 max_slope_deg = rad2deg(max_slope);
 max_slope_bounds = [0.99 1.01]*max_slope_deg(end);
